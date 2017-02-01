@@ -10,7 +10,7 @@ $to = $_GET['id'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
 
     <title>AlphaNuke Download Link Terminal</title>
 
@@ -31,7 +31,7 @@ $to = $_GET['id'];
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="assets/js/modernizr.js"></script>
+    <script src="/assets/js/modernizr.js"></script>
   </head>
 
   <body>
@@ -158,16 +158,16 @@ $to = $_GET['id'];
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/retina-1.1.0.js"></script>
-	<script src="assets/js/jquery.hoverdir.js"></script>
-	<script src="assets/js/jquery.hoverex.min.js"></script>
-	<script src="assets/js/jquery.prettyPhoto.js"></script>
-  	<script src="assets/js/jquery.isotope.min.js"></script>
-  	<script src="assets/js/custom.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+	<script src="/assets/js/retina-1.1.0.js"></script>
+	<script src="/assets/js/jquery.hoverdir.js"></script>
+	<script src="/assets/js/jquery.hoverex.min.js"></script>
+	<script src="/assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="/assets/js/jquery.isotope.min.js"></script>
+  	<script src="/assets/js/custom.js"></script>
 
-    <script src="assets/js/jquery.easing.js" type="text/javascript"></script>
-    <script src="assets/js/counter.min.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.easing.js" type="text/javascript"></script>
+    <script src="/assets/js/counter.min.js" type="text/javascript"></script>
     <script>
 
         var cDown = $("#counter-down");
