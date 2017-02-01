@@ -1,5 +1,16 @@
 <?php
-$to = $_GET['id'];
+	/*
+	 * Created by PhpStorm.
+	 * User: Hardik
+	 * Date: 01-02-2017
+	 * Time: 21:12
+	 * Patch #1
+	 */
+	require 'lib/conf.php';
+	if(!isset($_GET['id']) || $_GET['id']<1)
+	{
+		header("Location: http://www.alphanuke.com");
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -138,8 +149,8 @@ $to = $_GET['id'];
 		 			<p>
 		 				<a href="https://plus.google.com/118282109843275736061" target="_blank"><i class="fa fa-google-plus"></i></a>
 		 				<a href="https://www.facebook.com/AlphaNuke" target="_blank"><i class="fa fa-facebook"></i></a>
-		 				<!--<a href="#"><i class="fa fa-twitter"></i></a>
-		 				<a href="#"><i class="fa fa-instagram"></i></a>
+		 				<a href="http://www.alphanuke.com/" target="_blank"><i class="fa fa-globe"></i></a>
+		 				<!--<a href="#"><i class="fa fa-instagram"></i></a>
 		 				<a href="#"><i class="fa fa-tumblr"></i></a>-->
 		 			</p>
 		 		</div>
