@@ -102,7 +102,7 @@ $to = $_GET['id'];
 			    <p></p>
 			    <div class="hline"></div>
 			    <br><br>
-			    <a target="_blank" href="<?php if($to>=1) { echo "http://go.alpanuke.com/to/".$to; } else { echo "http://www.alphanuke.com"; } ?>" id="down" class="btn btn-danger btn-lg">Direct Download</a>
+			    <a target="_blank" href="<?php if($to>=1) { echo "http://go.alphanuke.com/to/".$to; } else { echo "http://www.alphanuke.com"; } ?>" id="down" class="btn btn-danger btn-lg">Direct Download</a>
 			    </div>
 		    </div>
 		    <div class="col-lg-2 col-lg-offset-1 centered">
@@ -136,11 +136,11 @@ $to = $_GET['id'];
 		 			<h4>Social Links</h4>
 		 			<div class="hline-w"></div>
 		 			<p>
-		 				<a href="#"><i class="fa fa-dribbble"></i></a>
-		 				<a href="#"><i class="fa fa-facebook"></i></a>
-		 				<a href="#"><i class="fa fa-twitter"></i></a>
+		 				<a href="https://plus.google.com/118282109843275736061" target="_blank"><i class="fa fa-google-plus"></i></a>
+		 				<a href="https://www.facebook.com/AlphaNuke" target="_blank"><i class="fa fa-facebook"></i></a>
+		 				<!--<a href="#"><i class="fa fa-twitter"></i></a>
 		 				<a href="#"><i class="fa fa-instagram"></i></a>
-		 				<a href="#"><i class="fa fa-tumblr"></i></a>
+		 				<a href="#"><i class="fa fa-tumblr"></i></a>-->
 		 			</p>
 		 		</div>
 		 		<div class="col-lg-4">
