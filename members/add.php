@@ -10,18 +10,18 @@
 		<form action="add-ex.php">
 			<div class="form-group">
 				<label for="inputlg">Title</label>
-				<input class="form-control input-lg" id="inputlg" name="go_title" type="text" placeholder="Title of Link">
+				<input class="form-control" id="inputdefault" name="go_title" type="text" placeholder="Title of Link">
 			</div>
 			<div class="form-group">
 				<label for="inputlg">Link</label>
-				<input class="form-control input-lg" id="inputlg" name="go_link" type="text" placeholder="Direct Link">
+				<input class="form-control input-lg" id="inputlg" name="go_link" type="text" placeholder="Direct Link" required>
 			</div>
 			<div class="form-group">
 				<label for="inputlg">Password of File</label>
-				<input class="form-control input-lg" id="inputlg" name="go_pass" type="text" placeholder="Password">
+				<input class="form-control" id="inputdefault" name="go_pass" type="text" placeholder="Password">
 			</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-success">Success</button>
+				<button type="submit" class="btn btn-success btn-lg" name="go_go" value="go">Submit</button>
 			</div>
 
 		</form>
