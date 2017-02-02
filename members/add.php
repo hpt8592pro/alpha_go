@@ -489,6 +489,9 @@
 		</table>
 	</div><! --/container -->
 	<br><br><br><br><br><br>
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
 	<script>
         $(document).ready(function() {
             $('#example').DataTable();
