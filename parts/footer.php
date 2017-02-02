@@ -24,8 +24,8 @@
 			<div class="col-lg-4">
 				<h4>Links</h4>
 				<div class="hline-w"></div>
-				<p><a href="http://go.alphanuke.com/members/">Members</a></p>
-				<p><a href="http://go.alphanuke.com/Administration">Administrator</a></p>
+				<p><a style="text-decoration: none" href="http://go.alphanuke.com/members/">Members</a></p>
+				<p><a style="text-decoration: none" href="http://go.alphanuke.com/Administration">Administrator</a></p>
 			</div>
 
 		</div><! --/row -->
