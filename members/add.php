@@ -12,7 +12,7 @@
 	 ***************************************************************************************************************** -->
 <br><br><br>
 	<div class="container mt">
-		<form action="add-ex.php">
+		<form action="add-ex.php" method="post">
 			<div class="form-group">
 				<label for="inputlg">Title</label>
 				<input class="form-control" id="inputdefault" name="go_title" type="text" placeholder="Title of Link">
