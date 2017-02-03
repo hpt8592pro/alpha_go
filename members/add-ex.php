@@ -18,6 +18,7 @@
 		$time = date("Y-m-d h:i:s");
 		$hash = date("ymdhis");
 		$sql = "INSERT INTO `links` ('hash', 'title`, `link`, `user`, `password`, `time`) VALUES ('".$hash."', '".$title."', '".$link."', '".$user."', '".$pass."', '".$time."')";
+		echo $sql;die;
 		$exec = mysqli_query($con, $sql);
 		$hash = base64_encode($hash);
 		header("Location: add.php?from=ex&agent=$hash");
