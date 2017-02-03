@@ -5,10 +5,8 @@
 	 * Date: 03-02-2017
 	 * Time: 03:11
 	 */
-	session_start();
-	$_SESSION['user']="Test";
 	require '../lib/conf.php';
-
+	$_SESSION['user']="Test";
 	if(isset($_POST['go_link']) && $_POST['go_link']!="")
 	{
 		$link = $_POST['go_link'];
@@ -19,6 +17,5 @@
 		$hash = date("ymdhis");
 		$sql = "INSERT INTO `links` ('hash', 'title`, `link`, `user`, `password`, `time`) VALUES ('".$hash."', '".$title."', '".$link."', '".$user."', '".$pass."', '".$time."')";
 		$exec = mysqli_query($con, $sql);
-		$hash = base64_encode($hash);
-		header("Location: add.php?from=ex&agent=$hash");
+		header("Location: view.php?from=ex&agent=$hash");
 	}

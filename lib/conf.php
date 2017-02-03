@@ -6,6 +6,17 @@
 	 * Time: 21:12
 	 * Patch #1
 	 */
+
+	session_start();
+	if(!isset($_SESSION['user']) || $_SESSION['user']=="")
+	{
+		unset($_SESSION['user']);
+		//header("Location:http://go.alphanuke.com/login.php?from=member&sign=kick");
+	}
+	else
+	{
+		$user=$_SESSION['user'];
+	}
 	date_default_timezone_set('Asia/Kolkata');
 
 	$info['project']="AlphaNuke GO";

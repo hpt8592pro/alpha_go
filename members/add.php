@@ -1,9 +1,5 @@
 <?php
-	session_start();
-	if(!isset($_SESSION['user']) || $_SESSION['user']=="")
-	{
-		//header("Location: login.php");
-	}
+	require '../lib/conf.php';
 	require '../parts/header.php';
 ?>
 
@@ -30,7 +26,7 @@
 			</div>
 
 		</form>
-	</div><! --/container -->
+	</div><!--/container -->
 	<br><br><br>
 	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>

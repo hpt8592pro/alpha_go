@@ -5,14 +5,5 @@
 	 * Date: 02-02-2017
 	 * Time: 13:23
 	 */
-	session_start();
-	if(!isset($_SESSION['user']) || $_SESSION['user']=="")
-	{
-		unset($_SESSION['user']);
-		//header("Location:http://go.alphanuke.com/login.php");
-	}
-	else
-	{
-		$user=$_SESSION['user'];
-	}
+
 	require '../lib/conf.php';
