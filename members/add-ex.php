@@ -14,8 +14,7 @@
 		$user = $_SESSION['user'];
 		$time = date("Y-m-d h:i:s");
 		$hash = date("ymdhis");
-		$sql = "INSERT INTO `links` ('hash', 'title`, `link`, `user`, `password`, `time`) VALUES ('".$hash."', '".$title."', '".$link."', '".$user."', '".$pass."', '".$time."')";
-		echo $sql;die;
+		$sql = "INSERT INTO `links` (`hash`, `title`, `link`, `user`, `password`, `time`) VALUES ('".$hash."', '".$title."', '".$link."', '".$user."', '".$pass."', '".$time."')";
 		$exec = mysqli_query($con, $sql);
 		header("Location: view.php?from=ex&agent=$hash");
 	}
