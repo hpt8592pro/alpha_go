@@ -1,8 +1,4 @@
 <?php
-	date_default_timezone_set('Asia/Kolkata');
-	$time = date("ymdhis");
-	echo $time;
-	die;
 	/*
 	 * Created by PhpStorm.
 	 * User: Hardik
