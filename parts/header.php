@@ -47,11 +47,11 @@
 			<a class="navbar-brand" target="_blank" href="http://www.alphanuke.com">AlphaNuke</a>
 		</div>
 		<div class="navbar-collapse collapse navbar-right">
-			<!--<ul class="nav navbar-nav">
-			  <li><a href="index.html">HOME</a></li>
-			  <li><a href="about.html">ABOUT</a></li>
-			  <li><a href="contact.html">CONTACT</a></li>
-			</ul>-->
+			<ul class="nav navbar-nav">
+			  <li><a href="index.php">Home</a></li>
+			  <li><a href="add.php">Add</a></li>
+			  <li><a href="view-all.php">View</a></li>
+			</ul>
 		</div><!--/.nav-collapse -->
 	</div>
 </div>
