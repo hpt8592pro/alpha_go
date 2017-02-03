@@ -49,8 +49,24 @@
 		<div class="navbar-collapse collapse navbar-right">
 			<ul class="nav navbar-nav">
 			  <li><a href="index.php">Home</a></li>
-			  <li><a href="add.php">Add</a></li>
-			  <li><a href="view-all.php">View</a></li>
+				<?php
+					session_start();
+					if(isset($_SESSION['user']))
+					{
+				?>
+						<li><a href="add.php">Add</a></li>
+						<li><a href="view-all.php">View</a></li>
+						<li><a href="logout.php">Logout</a></li>
+				<?php
+					}
+					else
+					{
+				?>
+						<li><a href="login.php">Login</a></li>
+				<?php
+					}
+				?>
+
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>
