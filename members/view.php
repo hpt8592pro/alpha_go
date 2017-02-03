@@ -14,7 +14,7 @@
 	<div class="container mt">
 		<div class="form-group">
 			<label for="inputlg">GO Link</label>
-			<input class="form-control input-lg selected" id="inputlg" name="go_link" type="text" onclick="this.select();" value="http://go.alphanuke.com/to/<?=$id?>" selected>
+			<input class="form-control input-lg selected" id="inputlg" name="go_link" type="text" onclick="this.select();" value="http://go.alphanuke.com/to/<?=$id?>" disabled>
 		</div>
 	</div><!--container -->
 	<br><br><br><br><br><br>
