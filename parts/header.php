@@ -54,15 +54,15 @@
 					if(isset($_SESSION['user']))
 					{
 				?>
-						<li><a href="add.php">Add</a></li>
-						<li><a href="view-all.php">View</a></li>
-						<li><a href="logout.php">Logout</a></li>
+						<li><a href="/members/add.php">Add</a></li>
+						<li><a href="/members/view-all.php">View</a></li>
+						<li><a href="/members/logout.php">Logout</a></li>
 				<?php
 					}
 					else
 					{
 				?>
-						<li><a href="login.php">Login</a></li>
+						<li><a href="/members/login.php">Login</a></li>
 				<?php
 					}
 				?>
