@@ -24,9 +24,9 @@
 	$info['author']="Hardik";
 
 
-	$conf['db_name']="alpha_go";
-	$conf['db_user']="alpha_go";
-	$conf['db_pass']="password";
+	$conf['db_name']="alphaczb_go";
+	$conf['db_user']="alphaczb_go";
+	$conf['db_pass']="pass@hardy8592";
 	$conf['db_host']="localhost";
 
 	$con = mysqli_connect($conf['db_host'],$conf['db_user'],$conf['db_pass'],$conf['db_name']);
