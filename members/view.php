@@ -10,11 +10,11 @@
 	<!-- *****************************************************************************************************************
 	 TITLE & CONTENT
 	 ***************************************************************************************************************** -->
-	<br><br><br>
+	<br><br><br><br><br>
 	<div class="container mt">
 		<div class="form-group">
 			<label for="inputlg">GO Link</label>
-			<input class="form-control input-lg" id="inputlg" name="go_link" type="text" value="http://go.alphanuke.com/to/<?=$id?>" disabled>
+			<input class="form-control input-lg selected" id="inputlg" name="go_link" type="text" value="http://go.alphanuke.com/to/<?=$id?>" selected>
 		</div>
 	</div><!--container -->
 	<br><br><br><br><br><br>
