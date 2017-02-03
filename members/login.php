@@ -15,17 +15,17 @@
 	 ***************************************************************************************************************** -->
 	<br><br><br><br><br>
 	<div class="container mt">
-		<form action="add-ex.php" method="post">
+		<form action="login-ex.php" method="post">
 			<div class="form-group">
 				<label for="inputlg">UserID or Email ID</label>
 				<input class="form-control" id="inputdefault" name="go_user" type="text" placeholder="UserID or Email ID">
 			</div>
 			<div class="form-group">
-				<label for="inputlg">Link</label>
-				<input class="form-control" id="inputdefault" name="go_pass" type="password" placeholder="Direct Link" required>
+				<label for="inputlg">Password</label>
+				<input class="form-control" id="inputdefault" name="go_pass" type="password" placeholder="Password" required>
 			</div>
 			<div class="form-group">
-				<button type="submit" class="btn btn-success btn-lg" name="go_go" value="go">Login</button>
+				<button type="submit" class="btn btn-success" name="go_go" value="go">Login</button>
 			</div>
 
 		</form>
