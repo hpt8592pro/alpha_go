@@ -2,8 +2,7 @@
 	session_start();
 	require '../parts/header.php';
 	require '../lib/conf.php';
-	$sql = "SELECT * FROM `links` WHERE `user`='".$user."' ORDER BY `id` DESC";
-	var_dump($user);die;
+	$sql = "SELECT * FROM `links` WHERE `user`='".$user[0]."' ORDER BY `id` DESC";
 	$query = mysqli_query($con,$sql);
 	$rows = mysqli_num_rows($query);
 ?>
