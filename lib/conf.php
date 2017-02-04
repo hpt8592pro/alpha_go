@@ -11,7 +11,7 @@
 	if(!isset($_SESSION['user']) || $_SESSION['user']=="")
 	{
 		unset($_SESSION['user']);
-		//header("Location:http://go.alphanuke.com/login.php?from=member&sign=kick");
+		header("Location:http://go.alphanuke.com/login.php?from=member&sign=kick");
 	}
 	else
 	{
