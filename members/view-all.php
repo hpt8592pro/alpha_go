@@ -3,7 +3,7 @@
 	require '../parts/header.php';
 	require '../lib/conf.php';
 	$sql = "SELECT * FROM `links` WHERE `user`='".$user[0]."' ORDER BY `id` DESC";
-	echo $sql;die;
+	//echo $sql;die;
 	$query = mysqli_query($con,$sql);
 	$rows = mysqli_num_rows($query);
 ?>
@@ -41,7 +41,7 @@
 			for($i=1;$i<=$rows;$i++)
 			{
 				//loop
-				$row = mysqli_fetch_row($query);
+				$row = mysqli_fetch_assoc($query);
 		?>
 				<tr>
 					<td><?=$i?></td>
