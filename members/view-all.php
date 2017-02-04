@@ -3,6 +3,7 @@
 	require '../parts/header.php';
 	require '../lib/conf.php';
 	$sql = "SELECT * FROM `links` WHERE `user`='".$user."' ORDER BY `id` DESC";
+	echo $sql;die;
 	$query = mysqli_query($con,$sql);
 	$rows = mysqli_num_rows($query);
 ?>
