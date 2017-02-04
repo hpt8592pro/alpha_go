@@ -15,8 +15,11 @@
 
 	if($data[0]==$go_pass)
 	{
+		$sql = "SELECT `user` FROM `users` WHERE `user`='".$go_user."' OR `email`='".$go_user."'";
+		$query = mysqli_query($con,$sql);
+		$user_name = mysqli_fetch_array($query);
 		session_start();
-		$_SESSION['user']=$go_user;
+		$_SESSION['user']=$user_name;
 		header("Location: add.php");
 	}
 	else

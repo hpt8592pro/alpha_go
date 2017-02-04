@@ -9,8 +9,10 @@
 	require 'lib/conf.php';
 	if(!isset($_GET['id']) || $_GET['id']<1)
 	{
-		//header("Location: http://www.alphanuke.com");
+		header("Location: http://www.alphanuke.com");
 	}
+	$hash = $_GET['id'];
+	//$sql = "SELECT ``";
 	require 'parts/header.php';
 ?>
 
