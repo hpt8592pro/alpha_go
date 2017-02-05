@@ -6,7 +6,7 @@
 	 * Time: 21:12
 	 * Patch #1
 	 */
-	require 'lib/conf.php';
+	require 'lib/outer-conf.php';
 	if(!isset($_GET['id']) || $_GET['id']<1)
 	{
 		header("Location: http://www.alphanuke.com");
