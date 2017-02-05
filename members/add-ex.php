@@ -12,10 +12,18 @@
 		$title = $_POST['go_title'];
 		$pass = $_POST['go_pass'];
 		$user = $_SESSION['user'];
+		echo "<pre>";
+		print_r($_SESSION);
+		echo "</pre>";
+		echo "<pre>";
+		var_dump($user);
+		echo "</pre>";
+		echo "<pre>";
+		var_dump($_SESSION);
+		echo "</pre>";die;
 		$time = date("Y-m-d h:i:s");
 		$hash = date("ymdhis");
 		$sql = "INSERT INTO `links` (`hash`, `title`, `link`, `user`, `password`, `time`) VALUES ('".$hash."', '".$title."', '".$link."', '".$user."', '".$pass."', '".$time."')";
-		echo $sql;die;
 		$exec = mysqli_query($con, $sql);
 		header("Location: view.php?from=ex&agent=$hash");
 	}
