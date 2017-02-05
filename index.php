@@ -70,7 +70,7 @@
 			    <p></p>
 			    <div class="hline"></div>
 			    <br><br>
-			    <a target="_blank" href="<?php if($to>=1) { echo $data['link']; } else { echo "http://www.alphanuke.com"; } ?>" id="down" class="btn btn-danger btn-lg">Direct Download</a>
+			    <a target="_blank" href="<?=$data['link']?>" id="down" class="btn btn-danger btn-lg">Direct Download</a>
 			    </div>
 		    </div>
 		    <div class="col-lg-2 col-lg-offset-1 centered">
