@@ -10,7 +10,7 @@
 	session_start();
 	if(!isset($_SESSION['user']) || $_SESSION['user']=="")
 	{
-		unset($_SESSION['user']);
+		session_destroy();
 		header("Location: /members/login.php?from=member&sign=kick");
 	}
 	else
