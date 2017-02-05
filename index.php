@@ -12,7 +12,17 @@
 		header("Location: http://www.alphanuke.com");
 	}
 	$hash = $_GET['id'];
-	//$sql = "SELECT ``";
+	$sql = "SELECT `link`,`password` FROM `links` WHERE `hash`='".$hash."'";
+	$query = mysqli_query($con,$sql);
+	$data = mysqli_fetch_assoc($query);
+	if($data['password']=="")
+	{
+		$pass = "";
+	}
+	else
+	{
+		$pass = $data['password'];
+	}
 	require 'parts/header.php';
 ?>
 
@@ -56,11 +66,11 @@
 			    </div>
 			    <div id="down-block" style="display: none">
 			    <div class="hline"></div>
-			    <h3>File Password : <code>pass_word</code></h3>
+			    <h3>File Password : <code><?=$pass?></code></h3>
 			    <p></p>
 			    <div class="hline"></div>
 			    <br><br>
-			    <a target="_blank" href="<?php if($to>=1) { echo "http://go.alphanuke.com/to/".$to; } else { echo "http://www.alphanuke.com"; } ?>" id="down" class="btn btn-danger btn-lg">Direct Download</a>
+			    <a target="_blank" href="<?php if($to>=1) { echo $data['link']; } else { echo "http://www.alphanuke.com"; } ?>" id="down" class="btn btn-danger btn-lg">Direct Download</a>
 			    </div>
 		    </div>
 		    <div class="col-lg-2 col-lg-offset-1 centered">
